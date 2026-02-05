@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio - Mubarak Hossain</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/318f6d5ee5.js" crossorigin="anonymous"></script>
+</head>
+
+<body
+    class="bg-zinc-950 text-zinc-300 antialiased selection:bg-indigo-500/30 selection:text-indigo-200 overflow-x-hidden relative">
+
+
+    <!-- Background -->
+    <div class="fixed top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
+        <div class="gradient-blob bg-indigo-600 w-96 h-96 rounded-full top-[-10%] left-[-10%]"></div>
+        <div class="gradient-blob bg-violet-600 w-[30rem] h-[30rem] rounded-full bottom-[-10%] right-[-10%] absolute">
+        </div>
+    </div>
+
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-lg font-medium tracking-tight text-white flex items-center gap-2">
+
+                <img src="./asset/logo.png" class="size-10 border rounded-full border-white"/>
+                <!-- <span
+                    class="w-8 h-8 rounded-full bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center text-xs text-white font-medium">MD</span> -->
+                <span class="hidden sm:block">Mubarak Hossain</span>
+            </a>
+
+            <div class="flex items-center gap-6">
+                <!-- Desktop Links -->
+                <div class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-400">
+                    <a href="#about" class="hover:text-white transition-colors">About</a>
+                    <a href="#skills" class="hover:text-white transition-colors">Expertise</a>
+                    <a href="#services" class="hover:text-white transition-colors">Services</a>
+                </div>
+
+                <div class="hidden md:flex items-center gap-4">
+                  
+                    <a href="#contact"
+                        class="px-4 py-2 text-sm rounded-full glass-card hover:bg-white/10 text-white transition-all border border-white/10">
+                        Contact
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger -->
+                <button class="md:hidden text-white flex items-center justify-center" id="menu">
+                    <iconify-icon icon="solar:hamburger-menu-linear" width="24" height="24"></iconify-icon>
+                </button>
+                <div class="hidden absolute bg-white right-0 top-0 w-[50%] h-screen bg-zinc-950/90" id="screen">
+                   <ul class="flex flex-col px-10 py-10 gap-y-2">
+                   <a href="#about" class="hover:text-white transition-colors"  id="menuitem">About</a>
+                    <a href="#skills" class="hover:text-white transition-colors"  id="menuitem">Expertise</a>
+                    <a href="#services" class="hover:text-white transition-colors"  id="menuitem">Services</a>
+                      <a href="#contact" class="hover:text-white transition-colors"  id="menuitem">Contact</a>
+                   </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-16 z-10">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-card mb-8">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span class="text-xs text-zinc-300 font-medium tracking-wide">Available for new project</span>
+            </div>
+
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-medium tracking-tighter text-white mb-6 leading-[1.1]">
+
+                Make your Business more easier !<br>
+
+            </h1>
+
+            <p class="text-lg text-zinc-400 max-w-xl mx-auto mb-10 leading-relaxed font-light">
+                I will help your companies to make work more easier and to get more profitable.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#contact"
+                    class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-white text-zinc-950 font-medium hover:bg-zinc-200 transition-colors flex items-center justify-center gap-2 group">
+                    Start a Project
+                    <iconify-icon icon="solar:arrow-right-linear" class="group-hover:translate-x-1 transition-transform"
+                        width="20"></iconify-icon>
+                </a>
+                <a href="#about"
+                    class="w-full sm:w-auto px-8 py-3.5 rounded-full glass-card text-white hover:bg-white/10 border border-white/10 transition-all flex items-center justify-center gap-2">
+                    More About Me
+                </a>
+            </div>
+        </div>
+    </section>
+
+        <!-- About Section (Picture Side-by-Side) -->
+    <section id="about" class="py-24 relative z-10 bg-zinc-950/50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <!-- Picture Side -->
+                <div class="relative group order-first">
+                    <div class="absolute -inset-2 bg-gradient-to-r from-indigo-500 to-violet-500 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+                    <div class="relative h-[500px] w-full glass-card rounded-2xl overflow-hidden border border-white/10">
+                        <!-- Placeholder Image -->
+                        <img src="./asset/ProfilePic.png" alt="Mubarak Hossain" class="w-full h-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-105">
+                        
+                        <!-- Floating Badge -->
+                        <div class="absolute bottom-6 left-6 right-6 p-4 glass-card rounded-xl bg-black/40 backdrop-blur-md border border-white/10">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-indigo-500/20 flex items-center justify-center text-indigo-400">
+                                    <iconify-icon icon="solar:verified-check-linear" width="20"></iconify-icon>
+                                </div>
+                                <div>
+                                    <p class="text-white text-sm font-medium">Web & Mobile App Developer</p>
+                                    <p class="text-xs text-zinc-400">Experiment will make perfect solution</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Text Side -->
+                <div class="order-last">
+                    <h2 class="text-3xl md:text-4xl font-medium tracking-tight text-white mb-6 uppercase">who i Am ?</h2>
+                    <div class="space-y-6 text-zinc-400 leading-relaxed text-base">
+                        <p>
+                            Hello! I'm Mubarak Hossain, a Full Stack Web &amp; Android Developer based in New York. I don't just write code; I solve business problems.
+                        </p>
+                        <p>
+                            My background allows me to bridge the gap between creative design and technical engineering. Whether you need a sleek landing page to capture leads or a complex mobile application to manage operations, I have the skillset to deliver.
+                        </p>
+                        <p>
+                            I prioritize **speed, security, and scalability**. My goal is to build digital products that your customers love to use and that run smoothly without constant maintenance.
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+       <!-- Skills Section (Comprehensive List) -->
+    <section id="skills" class="py-24 relative z-10">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-medium tracking-tight text-white mb-4">My Technical Toolkit</h2>
+                <p class="text-zinc-400">Every technology I leverage to build your products.</p>
+            </div>
+
+            <div class="grid gap-6">
+                <!-- Row 1: Web Frontend -->
+                <div class="glass-card p-6 md:p-8 rounded-2xl">
+                    <div class="flex flex-col md:flex-row gap-6 items-start md:items-center">
+                        <div class="w-full md:w-48 shrink-0 flex items-center gap-3">
+                            <iconify-icon icon="solar:laptop-linear" class="text-indigo-400" width="24"></iconify-icon>
+                            <h3 class="text-lg font-medium text-white">Frontend</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white/5 border border-white/5 text-zinc-300">HTML5</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white/5 border border-white/5 text-zinc-300">CSS</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white/5 border border-white/5 text-zinc-300">JavaScript (ES6+)</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-indigo-500/10 border border-indigo-500/20 text-indigo-300">React.js</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white/5 border border-white/5 text-zinc-300">Next.js</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white/5 border border-white/5 text-zinc-300">TypeScript</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white/5 border border-white/5 text-zinc-300">Tailwind CSS</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white/5 border border-white/5 text-zinc-300">Zustand State management</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white/5 border border-white/5 text-zinc-300">Framer Motion</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2: Backend & Database -->
+                <div class="glass-card p-6 md:p-8 rounded-2xl">
+                    <div class="flex flex-col md:flex-row gap-6 items-start md:items-center">
+                        <div class="w-full md:w-48 shrink-0 flex items-center gap-3">
+                            <iconify-icon icon="solar:server-square-linear" class="text-violet-400" width="24"></iconify-icon>
+                            <h3 class="text-lg font-medium text-white">Backend</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white/5 border border-white/5 text-zinc-300">Node.js</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white/5 border border-white/5 text-zinc-300">Express</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white/5 border border-white/5 text-zinc-300">MongoDB</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white/5 border border-white/5 text-zinc-300">Firebase</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white/5 border border-white/5 text-zinc-300">REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 3: Mobile (Android) -->
+                <div class="glass-card p-6 md:p-8 rounded-2xl">
+                    <div class="flex flex-col md:flex-row gap-6 items-start md:items-center">
+                        <div class="w-full md:w-48 shrink-0 flex items-center gap-3">
+                            <iconify-icon icon="solar:smartphone-linear" class="text-emerald-400" width="24"></iconify-icon>
+                            <h3 class="text-lg font-medium text-white">Android</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-emerald-500/10 border border-emerald-500/20 text-emerald-300">Kotlin</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white/5 border border-white/5 text-zinc-300">Jetpack Compose</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white/5 border border-white/5 text-zinc-300">Retrofit</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white/5 border border-white/5 text-zinc-300">Room DB</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white/5 border border-white/5 text-zinc-300">Coroutines</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white/5 border border-white/5 text-zinc-300">MVVM Architecture</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white/5 border border-white/5 text-zinc-300">Android Studio</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 4: Tools & Design -->
+                <div class="glass-card p-6 md:p-8 rounded-2xl">
+                    <div class="flex flex-col md:flex-row gap-6 items-start md:items-center">
+                        <div class="w-full md:w-48 shrink-0 flex items-center gap-3">
+                            <iconify-icon icon="solar:box-minimalistic-linear" class="text-pink-400" width="24"></iconify-icon>
+                            <h3 class="text-lg font-medium text-white">Tools &amp; Design</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white/5 border border-white/5 text-zinc-300">Git &amp; Github</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white/5 border border-white/5 text-zinc-300">Vercel</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white/5 border border-white/5 text-zinc-300">Figma</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white/5 border border-white/5 text-zinc-300">Adobe Photoshop</span>
+                              <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white/5 border border-white/5 text-zinc-300">Adobe Illustrator</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white/5 border border-white/5 text-zinc-300">Postman</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <!-- Services Section (Explained for Customer) -->
+    <section id="services" class="py-24 relative z-10 bg-zinc-950/50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-medium tracking-tight text-white mb-2">How I Help You</h2>
+                    <p class="text-zinc-400">Clear explanations of the value I provide for your business.</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Service 1 -->
+                <div class="group glass-card p-8 rounded-2xl hover:border-indigo-500/30 transition-all duration-300 hover:-translate-y-1 h-full">
+                    <div class="mb-6 w-12 h-12 rounded-lg bg-indigo-500/10 flex items-center justify-center">
+                        <iconify-icon icon="solar:monitor-smartphone-linear" class="text-indigo-400" width="28"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-medium text-white mb-3">Custom Website Development</h3>
+                    <p class="text-sm text-zinc-400 leading-relaxed mb-4">
+                        I build responsive websites that look great on phones and computers.
+                    </p>
+                    <ul class="space-y-2 text-sm text-zinc-500">
+                        <li class="flex items-center gap-2"><iconify-icon icon="solar:check-circle-linear" class="text-indigo-400"></iconify-icon> Fast loading speeds for better SEO</li>
+                        <li class="flex items-center gap-2"><iconify-icon icon="solar:check-circle-linear" class="text-indigo-400"></iconify-icon> Easy to manage content</li>
+                        <li class="flex items-center gap-2"><iconify-icon icon="solar:check-circle-linear" class="text-indigo-400"></iconify-icon>Dynamic data loading website</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="group glass-card p-8 rounded-2xl hover:border-violet-500/30 transition-all duration-300 hover:-translate-y-1 h-full">
+                    <div class="mb-6 w-12 h-12 rounded-lg bg-violet-500/10 flex items-center justify-center">
+                        <iconify-icon icon="solar:smartphone-linear" class="text-violet-400" width="28"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-medium text-white mb-3">Android App Creation</h3>
+                    <p class="text-sm text-zinc-400 leading-relaxed mb-4">
+                        Launch your business on the Google Play Store with a native application.
+                    </p>
+                     <ul class="space-y-2 text-sm text-zinc-500">
+                        <li class="flex items-center gap-2"><iconify-icon icon="solar:check-circle-linear" class="text-violet-400"></iconify-icon> Offline functionality</li>
+                        <li class="flex items-center gap-2"><iconify-icon icon="solar:check-circle-linear" class="text-violet-400"></iconify-icon> Push notifications to engage users</li>
+                        <li class="flex items-center gap-2"><iconify-icon icon="solar:check-circle-linear" class="text-violet-400"></iconify-icon> Smooth, high-performance animations</li>
+                        <li class="flex items-center gap-2"><iconify-icon icon="solar:check-circle-linear" class="text-violet-400"></iconify-icon> Manage customer via coockies</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="group glass-card p-8 rounded-2xl hover:border-pink-500/30 transition-all duration-300 hover:-translate-y-1 h-full">
+                    <div class="mb-6 w-12 h-12 rounded-lg bg-pink-500/10 flex items-center justify-center">
+                        <iconify-icon icon="solar:tuning-square-2-linear" class="text-pink-400" width="28"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-medium text-white mb-3">Backend &amp; API Integration</h3>
+                    <p class="text-sm text-zinc-400 leading-relaxed mb-4">
+                        The "engine" behind your software that handles data, users, and logic securely.
+                    </p>
+                     <ul class="space-y-2 text-sm text-zinc-500">
+                        <li class="flex items-center gap-2"><iconify-icon icon="solar:check-circle-linear" class="text-pink-400"></iconify-icon> Secure user login systems</li>
+                        <li class="flex items-center gap-2"><iconify-icon icon="solar:check-circle-linear" class="text-pink-400"></iconify-icon> Cloud database management</li>
+                        <li class="flex items-center gap-2"><iconify-icon icon="solar:check-circle-linear" class="text-pink-400"></iconify-icon> Connecting 3rd party services</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+   <!-- Contact Section -->
+    <section id="contact" class="py-24 relative z-10">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="glass-card rounded-3xl p-8 md:p-12 border border-white/10">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h2 class="text-3xl font-medium tracking-tight text-white mb-4">Let's work together</h2>
+                        <p class="text-zinc-400 mb-8 text-sm leading-relaxed">
+                            Ready to transform your idea into a working product? Fill out the form and I'll get back to you within 24 hours.
+                        </p>
+                        
+                        <div class="space-y-4">
+                            <a href="mailto:hello@johndoe.dev" class="flex items-center gap-3 text-sm text-zinc-300 hover:text-white transition-colors">
+                                <div class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center">
+                                    <iconify-icon icon="solar:letter-linear"></iconify-icon>
+                                </div>
+                                masum.rj.bd@gmail.com
+                            </a>
+                            <div class="flex gap-x-2">
+                                <a href="https://m.me/masum.rj.bdgmail.com?text=Hello!"><i class="fa-brands fa-facebook w-8 h-8 rounded-full bg-white/5 flex items-center justify-center cursor-pointer"></i></a>
+                                <a href="https://api.whatsapp.com/send?phone=8801322229922&text=Hello!"><i class="fa-brands fa-whatsapp w-8 h-8 rounded-full bg-white/5 flex items-center justify-center cursor-pointer"></i></a>
+                                <a href="https://ig.me/m/masum.rj.bd"><i class="fa-brands fa-instagram w-8 h-8 rounded-full bg-white/5 flex items-center justify-center cursor-pointer"></i></a>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="space-y-4" id="contact-form">
+                        <div class="space-y-1">
+                            <label class="text-xs font-medium text-zinc-500 uppercase tracking-wider">Name</label>
+                            <input type="text" class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-indigo-500/50 focus:bg-white/10 transition-all placeholder:text-zinc-600" placeholder="Your name" name="from_name">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-xs font-medium text-zinc-500 uppercase tracking-wider">Email</label>
+                            <input type="email" class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-indigo-500/50 focus:bg-white/10 transition-all placeholder:text-zinc-600" placeholder="your@email.com" name="from_email">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-xs font-medium text-zinc-500 uppercase tracking-wider">Message</label>
+                            <textarea rows="4" class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-indigo-500/50 focus:bg-white/10 transition-all placeholder:text-zinc-600" placeholder="Tell me about your project..." name="message"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-white text-zinc-950 font-medium py-3 rounded-lg hover:bg-zinc-200 transition-colors mt-2">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <!-- Footer -->
+    <footer class="py-8 border-t border-white/5 relative z-10">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-xs text-zinc-500">© 2026 Mubarak Hossain. All rights reserved.</p>
+            <div class="flex gap-6 text-xs text-zinc-500">
+                <a href="#" class="hover:text-zinc-300 transition-colors">Privacy</a>
+                <a href="#" class="hover:text-zinc-300 transition-colors">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="main.js"></script>
+    <script src="nav.js"></script>
+    <script src="email.js"></script>
+</body>
+
+</html>
