@@ -1,13 +1,11 @@
 const menuicon = document.getElementById("menu")
 const item = document.getElementById("menuitem")
-const screen = document.getElementById("screen")
 
 
-function show(){
-   menuicon.classList.remove('hidden')
+menuicon.addEventListener('click',function press(){
+   const screen = document.getElementById("screen")
+   screen.classList.remove("hidden")
+})
 
-}
-
-function hide(){
-item.classList.remove('active')
-}
+item.addEventListener('click',function press(){
+})
